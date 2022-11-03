@@ -1,4 +1,6 @@
-package Assignments;
+//package Assignments;
+
+import java.util.ArrayList;
 
 public class Main
 {
@@ -8,7 +10,15 @@ public class Main
         System.out.println("Quincy's Music Lists");
         System.out.println();
 
-        //song object
-        Songs beautiful = new Songs();
+        Songs friends = new Songs("Friends","Anne Marie", 22222889);
+        //friends.print();
+
+        ArrayList<Songs> songlist = new ArrayList<Songs>();
+        songlist.add(friends);
+
+        for (Songs song : songlist)
+        {
+            song.print();
+        }
     }
 }
