@@ -10,9 +10,10 @@ public class Main
         System.out.println("Quincy's Music Lists");
         System.out.println();
 
+        //All the songs in the playlist
+
         Songs friends = new Songs("Friends","Anne Marie", 22222889);
         //friends.print();
-
 
         Songs song2 = new Songs("Don't Start Now","Dua Lipa",6070228 );
         //song2.print();
@@ -48,6 +49,7 @@ public class Main
         Songs song12 = new Songs("Savage Love","Jason Durelo",890500200 );
         //song10.print();
 
+        //adding the songs
         ArrayList<Songs> songlist = new ArrayList<Songs>();
         songlist.add(friends);
         songlist.add(song2);
@@ -62,6 +64,7 @@ public class Main
         songlist.add(song11);
         songlist.add(song12);
 
+        //removing the songs
         songlist.remove(song12,song11);
 
         for (Songs song : songlist)
