@@ -40,14 +40,13 @@ public class Main
         //song9.print();
 
         Songs song10 = new Songs("Danza Kuduro","Don Omar",890432156 );
-
         //song10.print();
+
         Songs song11 = new Songs("Beautiful","Ed Sheeran",890500156 );
-        //song10.print();
+        //song11.print();
 
-        //song10.print();
         Songs song12 = new Songs("Savage Love","Jason Durelo",890500200 );
-        //song10.print();
+        //song12.print();
 
         //adding the songs
         ArrayList<Songs> songlist = new ArrayList<Songs>();
@@ -65,10 +64,17 @@ public class Main
         songlist.add(song12);
 
         //removing the songs
-        songlist.remove(song12,song11);
+        songlist.remove(song10);
 
         for (Songs song : songlist)
         {
+            song.print();
+        }
+        //playcount
+        int playcount = 0;
+        for (Songs song : songlist)
+        {
+            if (playcount>96549778)
             song.print();
         }
 
