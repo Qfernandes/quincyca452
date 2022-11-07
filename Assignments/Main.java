@@ -44,6 +44,10 @@ public class Main
         Songs song11 = new Songs("Beautiful","Ed Sheeran",890500156 );
         //song10.print();
 
+        //song10.print();
+        Songs song12 = new Songs("Savage Love","Jason Durelo",890500200 );
+        //song10.print();
+
         ArrayList<Songs> songlist = new ArrayList<Songs>();
         songlist.add(friends);
         songlist.add(song2);
@@ -55,9 +59,10 @@ public class Main
         songlist.add(song8);
         songlist.add(song9);
         songlist.add(song10);
+        songlist.add(song11);
+        songlist.add(song12);
 
-
-
+        songlist.remove(song12,song11);
 
         for (Songs song : songlist)
         {
